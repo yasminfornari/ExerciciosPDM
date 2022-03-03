@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+  <body>
+    <script>
+    function calculadora(){
+    var a = parseFloat(prompt("digite o primeiro número"));
+    var b = parseFloat(prompt("digite o segundo número"));
+    var opcao = parseInt(prompt("Escolha a operação desejada: 1 - Soma, 2 - Subtracao, 3 - Multiplicacao, 4 - Divisao"));
+
+if (opcao===1){
+  adicao(a, b);
+}
+  if (opcao===2){
+  subtracao(a, b);
+}
+if (opcao===3){
+  multiplicacao(a, b)
+}
+if (opcao===4){
+  divisao(a, b)
+
+}
+      }
+
+  function adicao(a, b){
+   var res = a + b;
+   console.log(res);
+}
+
+var subtracao = function (a, b){
+  var res= a - b;
+  console.log(res);
+}
+
+var multiplicacao = (a, b) => {
+  var res = a * b;
+  console.log(res);
+}
+
+var divisao = (a, b) => {
+  var res = a / b;
+  console.log(res);
+  }
+
+      calculadora();
+     
+    </script>
+  </body>
+</html>
