@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+  
+
+    <button>Iniciar</button>
+    
+    <script>
+        
+       
+function CalcularIdade () {
+  var anonascimento = prompt ("Insira seu ano de nascimento");
+
+  console.log("Quem nasceu em " + anonascimento + " tem em 2022 " + (2022 - anonascimento));
+
+  try {
+    if (anonascimento<0)
+      throw "Não podem ser digitados números negativos";
+  } catch(err){
+    console.log(err);
+    alert(err);
+  }
+  }
+  CalcularIdade();
+
+
+   </script>
+    </script>
+  </body>
+</html>
