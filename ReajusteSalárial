@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title>replit</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+  </head>
+  <body>
+    <h1>Reajuste Salarial</h1>
+     <button onclick="Reajuste()">Iniciar Cálculo</button>
+    <button type="reset" class="btn btn-danger mt-4 ml-5" id="clear">Limpar</button>
+     
+    <script>
+
+      function Reajuste() {
+        var nome1 = String(prompt("Digite o nome do funcionário: "));
+        var telefone1 = parseFloat(prompt("Digite o telefone do funcionário (somente números): "));
+        var salario1 = parseFloat(prompt("Digite o salário do funcionário: "));
+        var porcentagem = parseFloat(prompt("Digite a porcentagem de reajuste salarial do funcionário: "));
+        
+        var funcionario = {
+        nome: nome1 , telefone: telefone1 , 
+        salario: salario1
+      }
+        console.log('my object:',funcionario)
+        console.log(ReajusteS(salario1,porcentagem))
+      }  
+      
+       var ReajusteS = (a,b) => a/b + a;
+      
+    </script>
+  </body>
+</html>
